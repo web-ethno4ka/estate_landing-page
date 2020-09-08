@@ -1,0 +1,92 @@
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-align-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-align-center-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin flex-row-direction {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column-direction {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin container-block {
+  width: 80vw;
+  max-width: 111rem;
+}
+
+@mixin h2-heading($value) {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: $value;
+}
+
+@mixin h3-heading {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@mixin label($bottom, $left) {
+  @include flex-align-center;
+  width: 34rem;
+  height: 8rem;
+  background-color: $cta-primary-color;
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+  font-size: 1.8rem;
+  font-weight: 700;
+  i {
+    color: $white-color;
+  }
+  span {
+    margin-left: 1rem;
+  }
+}
+
+@mixin input-search-container {
+  display: flex;
+  min-width: 20rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  .fa-search {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: $gray-color;
+  }
+  .search-location {
+    padding-left: 5.6rem;
+    width: 37rem;
+    height: 7rem;
+    color: $gray-color;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .cta-search {
+    width: 12rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: $cta-primary-color;
+    transition: $transition-effect;
+    &:hover {
+      background-color: $btn-hover-color;
+    }
+  }
+}

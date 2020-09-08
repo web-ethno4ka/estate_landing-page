@@ -1,0 +1,22 @@
+header {
+  @include flex-align-center-between;
+  margin: 3rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  .logo {
+    font-size: 2.6rem;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .navigation {
+    flex: 2 1 30%;
+  }
+  .cta-block {
+    flex: 0 3 auto;
+  }
+  .humb-menu_icon {
+    display: none;
+  }
+}

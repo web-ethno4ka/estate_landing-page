@@ -1,0 +1,31 @@
+.cta-block {
+  .cta {
+    padding: 1.3rem 2.6rem;
+    border-radius: $input-btn-border-radius;
+    transition: $transition-effect;
+    &--primary {
+      background-color: $cta-primary-color;
+      &:hover {
+        background-color: $btn-hover-color;
+      }
+    }
+    &--tertiary {
+      background-color: transparent;
+      &:hover {
+        color: $cta-primary-color;
+      }
+    }
+  }
+}
+
+.cta--secondary {
+  width: 25rem;
+  min-width: 10%;
+  margin-left: 4rem;
+  background-color: $white-color;
+  border-radius: $input-btn-border-radius;
+  transition: $transition-effect;
+  &:hover {
+    background-color: $cta-primary-color;
+  }
+}

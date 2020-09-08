@@ -1,0 +1,9 @@
+.wrapper {
+  @include flex-align-center-evenly;
+  width: 100vw;
+  background-color: #fff;
+  &-container {
+    @include container-block;
+    background-color: $white-color;
+  }
+}

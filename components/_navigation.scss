@@ -1,0 +1,16 @@
+nav {
+  .navigation {
+    display: flex;
+    &-items {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    &-item {
+      transition: $transition-effect;
+      &:hover {
+        color: $cta-primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
