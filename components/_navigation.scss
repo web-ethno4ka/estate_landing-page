@@ -12,5 +12,14 @@ nav {
         cursor: pointer;
       }
     }
+    .humb-menu_icon {
+      display: none;
+      .line {
+        margin: 0.5rem;
+        width: 2.5rem;
+        height: 0.3rem;
+        background-color: $cta-primary-color;
+      }
+    }
   }
 }

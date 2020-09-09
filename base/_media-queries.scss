@@ -126,7 +126,31 @@
   }
   .header {
     .navigation {
-      display: none;
+      &-items {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        color: $white-color;
+        background-color: $primary-color;
+        z-index: 5;
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        height: 100vh;
+      }
+      .humb-menu_icon {
+        display: block;
+        position: absolute;
+        z-index: 10;
+      }
+      .active {
+        transform: translateX(100%);
+      }
     }
     .logo {
       width: 30%;
@@ -137,10 +161,6 @@
       .cta--tertiary {
         padding: 1rem 1.6rem;
       }
-    }
-    .humb-menu_icon {
-      display: flex;
-      font-size: 1.8rem;
     }
   }
   .special-offer {
