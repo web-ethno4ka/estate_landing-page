@@ -165,13 +165,6 @@ nav .navigation .humb-menu_icon {
   display: none;
 }
 
-nav .navigation .humb-menu_icon .line {
-  margin: 0.5rem;
-  width: 2.5rem;
-  height: 0.3rem;
-  background-color: #ffcc01;
-}
-
 .footer .section-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1244,7 +1237,7 @@ header .cta-block {
   .section:not(:first-child) {
     margin: 5rem 0;
   }
-  .header .navigation-items {
+  .header .navigation {
     position: absolute;
     top: 0;
     right: 0;
@@ -1259,6 +1252,8 @@ header .cta-block {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .header .navigation-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1270,12 +1265,16 @@ header .cta-block {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 0;
-    height: 100vh;
+    height: 60vh;
   }
   .header .navigation .humb-menu_icon {
     display: block;
-    position: absolute;
-    z-index: 10;
+  }
+  .header .navigation .humb-menu_icon .line {
+    margin: 0.6rem;
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: #fff;
   }
   .header .navigation .active {
     -webkit-transform: translateX(100%);
