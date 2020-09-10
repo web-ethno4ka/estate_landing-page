@@ -121,39 +121,48 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .section:not(:first-child) {
     margin: 5rem 0;
   }
   .header {
+    justify-content: space-between;
     .navigation {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 60%;
-      height: 100vh;
-      color: $white-color;
-      background-color: $primary-color;
-      z-index: 5;
-      transform: translateX(0%);
-      transition: transform 0.5s ease-in;
+      flex: 0 1 auto;
       &-items {
-        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
+        padding-top: 4rem;
         padding-left: 0;
-        height: 60vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        color: $white-color;
+        background-color: rgba($color: $primary-color, $alpha: 0.97);
+        z-index: 5;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
       }
-      .humb-menu_icon {
+      &-item {
+        margin: 3rem 0;
+      }
+      .hamb-menu_icon {
         display: block;
         .line {
           margin: 0.6rem;
           width: 2.5rem;
           height: 0.2rem;
-          background-color: $white-color;
+          background-color: $primary-color;
+          transition: all 0.3s ease;
         }
       }
       .active {
-        transform: translateX(100%);
+        transform: translateX(0%);
       }
     }
     .logo {
@@ -278,11 +287,32 @@
       }
     }
   }
+  .toggle {
+    .line-1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .line-2 {
+      opacity: 0;
+    }
+    .line-3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
   .section:not(:first-child) {
     margin: 4rem 0;
+  }
+  .header {
+    .logo {
+      font-size: 2rem;
+    }
+    .navigation {
+      &-items {
+        width: 55%;
+      }
+    }
   }
   .special-offer-image {
     .description {

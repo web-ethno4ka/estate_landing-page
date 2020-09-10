@@ -12,8 +12,11 @@ nav {
         cursor: pointer;
       }
     }
-    .humb-menu_icon {
+    .hamb-menu_icon {
       display: none;
+    }
+    .active {
+      transform: translateX(0%);
     }
   }
 }
