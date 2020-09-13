@@ -363,7 +363,13 @@ header .cta-block {
   width: 96rem;
   min-width: 60rem;
   height: 63rem;
-  background-color: #96bece;
+}
+
+.special-offer-image .image-container {
+  width: 96rem;
+  min-width: 60rem;
+  height: 63rem;
+  opacity: 0.6;
 }
 
 .special-offer-image .description {

@@ -12,7 +12,13 @@
     width: 96rem;
     min-width: 60rem;
     height: 63rem;
-    background-color: $img-placeholder-color;
+    // background-color: $img-placeholder-color;
+    .image-container {
+      width: 96rem;
+      min-width: 60rem;
+      height: 63rem;
+      opacity: 0.6;
+    }
     .description {
       @include flex-align-center-evenly;
       margin-right: -6rem;
@@ -118,6 +124,7 @@
           margin: 0 3rem 3rem 0;
           background: $img-placeholder-color;
           box-shadow: $drop-shadow;
+
           &_description {
             @include flex-column-direction;
             align-self: flex-end;

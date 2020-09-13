@@ -8,6 +8,8 @@
       rel="stylesheet"
     />
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="OwlCarousel/src/scss/owl.carousel.scss">
+    <link rel="stylesheet" href="OwlCarousel/src/scss/owl.theme.default.scss">
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
@@ -40,6 +42,7 @@
         <main class="main">
           <section class="section special-offer">
             <div class="special-offer-image">
+              <div class="image-container"><img src="/assets/main-banner.jpg" alt=""></div>
               <div class="description">
                 <div class="description-item">
                   <i class="fas fa-phone"></i>
@@ -103,6 +106,7 @@
                 <h2 class="heading-2">More Then 500+ Apartments For Rent</h2>
                 <div class="cards">
                   <div class="card">
+                    <div class="card-image_container"><img src="/assets/main-banner.jpg" alt=""></div>
                     <div class="card_description">
                       <p class="title">Random Street, Apt B453, New York</p>
                       <div class="information">
@@ -288,7 +292,7 @@
                   <h2 class="heading-2">Meet Our Agents</h2>
                   <p class="text-block">In this space market-facing, yet UI work flows, or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day.</p>
                 </div>
-                <div class="cards">
+                <div id="js-carousel-1" class="cards owl-carousel">
                   <div class="card">
                     <div class="card_description">
                       <p class="title">Agent</p>
@@ -428,4 +432,6 @@
 
   </body>
   <script src="animation.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
 </html>
