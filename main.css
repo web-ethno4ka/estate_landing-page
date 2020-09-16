@@ -1180,13 +1180,28 @@ header .cta-block {
 }
 
 @media screen and (max-width: 1050px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .header .navigation {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-top: 3rem;
+  }
   .header .navigation-items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .header .cta-block {
-    -ms-flex-preferred-size: 38%;
-        flex-basis: 38%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .special-offer {
     margin-bottom: 7rem;
@@ -1273,11 +1288,19 @@ header .cta-block {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
   }
   .header .navigation {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+    margin-top: 0;
   }
   .header .navigation-items {
     -webkit-box-orient: vertical;

@@ -29,11 +29,17 @@
 
 @media screen and (max-width: 1050px) {
   .header {
+    flex-flow: row wrap;
+    .navigation {
+      order: 1;
+      flex: 0 1 100%;
+      margin-top: 3rem;
+    }
     .navigation-items {
       flex-wrap: wrap;
     }
     .cta-block {
-      flex-basis: 38%;
+      flex-basis: 50%;
     }
   }
   .special-offer {
@@ -129,8 +135,11 @@
   }
   .header {
     justify-content: space-between;
+    flex-flow: row nowrap;
     .navigation {
+      order: 0;
       flex: 0 1 auto;
+      margin-top: 0;
       &-items {
         flex-direction: column;
         justify-content: flex-start;
