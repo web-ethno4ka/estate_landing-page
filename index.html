@@ -21,11 +21,11 @@
           <div class="logo"><a href="#">luxestate</a></div>
           <nav class="navigation">
             <ul class="navigation-items">
-              <li class="navigation-item"><a href="#" class="navigation-link">About</a></li>
-              <li class="navigation-item"><a href="#" class="navigation-link">Apartments</a></li>
-              <li class="navigation-item"><a href="#" class="navigation-link">How it Works</a></li>
-              <li class="navigation-item"><a href="#" class="navigation-link">Agents</a></li>
-              <li class="navigation-item"><a href="" class="navigation-link">Contact Us</a></li>
+              <li class="navigation-item"><a href="#about" class="navigation-link">About</a></li>
+              <li class="navigation-item"><a href="#apartments" class="navigation-link">Apartments</a></li>
+              <li class="navigation-item"><a href="#how-it-works" class="navigation-link">How it Works</a></li>
+              <li class="navigation-item"><a href="#agents" class="navigation-link">Agents</a></li>
+              <li class="navigation-item"><a href="#contact-us" class="navigation-link">Contact Us</a></li>
             </ul>
             <div class="hamb-menu_icon">
               <div class="line line-1"></div>
@@ -62,7 +62,7 @@
             </div>
           </section>
 
-          <section class="section company-statistics">
+          <section id="about" class="section company-statistics">
             <div class="company-statistics_description">
               <h2 class="heading-2">Our’s Company Statistics</h2>
               <p class="text-block">
@@ -80,19 +80,19 @@
             </div>
             <div class="company-statistics_indicators">
               <div class="company-statistics_indicator">
-                <span class="number quantity" data-max="748">0</span><span class="title">Apartments</span>
+                <span class="number quantity" data-max="108" data-min="0">0</span><span class="title">Apartments</span>
               </div>
 
               <div class="company-statistics_indicator">
-                <span class="number quantity" data-max="3854">0</span><span class="title">Clients</span>
+                <span class="number quantity" data-max="254" data-min="0">0</span><span class="title">Clients</span>
               </div>
 
               <div class="company-statistics_indicator">
-                <span class="number quantity" data-max="24">0</span><span class="title">Employees</span>
+                <span class="number quantity" data-max="24" data-min="0">0</span><span class="title">Employees</span>
               </div>
 
               <div class="company-statistics_indicator">
-                <span class="number quantity" data-max="14">0</span><span class="title">Awards</span>
+                <span class="number quantity" data-max="14" data-min="0">0</span><span class="title">Awards</span>
               </div>
             </div>
           </section>
@@ -100,7 +100,7 @@
       </div>
     </div>
 
-          <section class="section-wrapper">
+          <section id="apartments" class="section-wrapper">
             <div class="apartment-gallery">
               <div class="apartment-gallery_container">
                 <h2 class="heading-2">More Then 500+ Apartments For Rent</h2>
@@ -229,7 +229,7 @@
               </div>
           </section>
 
-          <section class="section how-it-works">
+          <section id="how-it-works" class="section how-it-works">
             <div class="how-it-works_container">
               <div class="how-it-works_description">
                 <h2 class="heading-2">How it works?</h2>
@@ -290,7 +290,7 @@
             </div>
           </sections>
 
-          <section class="section-wrapper">
+          <section id="agents" class="section-wrapper">
             <div class="agents">
               <div class="agents_container">
                 <div class="agents_description">
@@ -438,7 +438,7 @@
             </div>
           </section>
 
-        <footer class="footer">
+        <footer id="contact-us" class="footer">
           <section class="section-wrapper">
             <div class="footer_container">
               <div class="footer_subscribe-block">
@@ -486,8 +486,8 @@
 
   </body>
   <script src="/library/jquery.js"></script>
+  <script src="/library/owl.carousel.min.js"></script>
   <script src="menu-animation.js"></script>
   <script src="number-animation.js"></script>
-  <script src="/library/owl.carousel.min.js"></script>
   <script src="carousel.js"></script>
 </html>
